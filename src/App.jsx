@@ -12,7 +12,9 @@ export default function PaintApp() {
   return (
     <div className="min-h-screen bg-slate-50 p-4 md:p-8 font-sans text-slate-900">
       <header className="max-w-4xl mx-auto mb-8">
-        <h1 className="text-3xl font-bold text-slate-800">Paint Projex <span className="text-blue-600">Estimator</span></h1>
+        <h1 className="text-3xl font-bold text-slate-800">
+  RAV Property <span className="text-blue-600">Projects</span>
+</h1>
         <p className="text-slate-500 text-sm">Melbourne, VIC</p>
       </header>
 
