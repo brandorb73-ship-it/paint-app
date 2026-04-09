@@ -13,12 +13,15 @@ export const serviceCatalog = {
     'Walls': { rate: 45, desc: 'Premium Low Sheen' },
     'Ceilings': { rate: 35, desc: 'Flat White' },
     'Trims': { rate: 25, desc: 'Semi-Gloss Enamel' },
-    'Cabinets': { rate: 120, desc: 'Satin Finish' }
+    'Cabinets': { rate: 120, desc: 'Satin Finish' },
+    'Feature Wall': { rate: 65, desc: 'Accent/Texture' } // Added
   },
   Exterior: {
     'Facade': { rate: 55, desc: 'Weatherproof' },
     'Eaves': { rate: 30, desc: 'Exterior Protect' },
-    'Fascia': { rate: 35, desc: 'UV Gloss' }
+    'Fascia': { rate: 35, desc: 'UV Gloss' },
+    'Deck': { rate: 50, desc: 'Stain/Oil' }, // Added
+    'Roof': { rate: 85, desc: 'Restoration' } // Added
   },
   Prep: {
     'Sanding': { rate: 15, desc: 'Industrial Grade' },
