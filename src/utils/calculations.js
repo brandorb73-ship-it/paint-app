@@ -1,17 +1,37 @@
 export const sectorData = {
   'Residential': { multiplier: 1.0, color: 'text-blue-600' },
-  'Aged Care': { multiplier: 1.25, color: 'text-red-600' }, // High compliance/After-hours
-  'New Build': { multiplier: 0.85, color: 'text-green-600' }, // Efficiency of empty space
-  'Heritage': { multiplier: 1.6, color: 'text-amber-600' }, // High detail/Restoration
-  'Boutique Studio': { multiplier: 1.4, color: 'text-purple-600' }, // Precision masking
-  'Pre-sale': { multiplier: 0.9, color: 'text-slate-600' }, // Speed/Refresh focus
+  'Aged Care': { multiplier: 1.25, color: 'text-red-600' },
+  'New Build': { multiplier: 0.85, color: 'text-green-600' },
+  'Heritage': { multiplier: 1.6, color: 'text-amber-600' },
+  'Boutique Studio': { multiplier: 1.4, color: 'text-purple-600' },
+  'Pre-sale': { multiplier: 0.9, color: 'text-slate-600' },
   'Commercial': { multiplier: 1.2, color: 'text-cyan-600' },
   'Touch-ups': { multiplier: 1.1, color: 'text-pink-600' }
 };
 
+export const serviceRates = {
+  // Interior
+  'Walls': { rate: 45, desc: 'Premium Low Sheen' },
+  'Ceilings': { rate: 35, desc: 'Flat Ceiling White' },
+  'Trims': { rate: 25, desc: 'Semi-Gloss Enamel' },
+  'Cabinets': { rate: 120, desc: 'Specialized Satin Finish' },
+  'FeatureWall': { rate: 65, desc: 'Bold/Textured Accents' },
+  // Exterior
+  'Facade': { rate: 55, desc: 'Weatherproof Membrane' },
+  'Eaves': { rate: 30, desc: 'Exterior Protection' },
+  'Fascia': { rate: 35, desc: 'UV Resistant Gloss' },
+  'Deck': { rate: 45, desc: 'Oiling/Staining' },
+  'Roof': { rate: 85, desc: 'Restoration & Seal' },
+  // Prep
+  'Sanding': { rate: 15, desc: 'Industrial Grade Prep' },
+  'Plaster Repair': { rate: 65, desc: 'Crack & Hole Patching' },
+  'Timber Rot': { rate: 95, desc: 'Structural Restoration' },
+  'Pressure Wash': { rate: 10, desc: 'High Pressure Clean' }
+};
+
 export const pricingData = {
-  laborDay: 580, // Internal cost per painter
-  margin: 1.35,  // 35% markup for RAV Property
+  laborDay: 580,
+  margin: 1.35,
   brands: {
     'Dulux Wash & Wear': 28.50,
     'Haymes Expressions': 26.20,
