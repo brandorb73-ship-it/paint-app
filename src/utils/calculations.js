@@ -37,6 +37,7 @@ export const pricingData = {
   brands: {
     'Dulux Wash & Wear': 28.50,
     'Haymes Elite': 26.20,
+    'Berger Premium': 21.50, // Added Berger brand
     'Wattyl ID': 22.10,
     'Taubmans Endure': 24.80
   }
