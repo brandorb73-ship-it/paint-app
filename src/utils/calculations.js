@@ -5,7 +5,7 @@ export const sectorData = {
   'Heritage': { multiplier: 1.6, color: 'text-amber-600' },
   'Boutique Studio': { multiplier: 1.4, color: 'text-purple-600' },
   'Pre-sale': { multiplier: 0.9, color: 'text-slate-600' },
-  'Commercial Business': { multiplier: 1.2, color: 'text-cyan-600' }
+  'Commercial': { multiplier: 1.2, color: 'text-cyan-600' }
 };
 
 export const serviceCatalog = {
@@ -13,21 +13,17 @@ export const serviceCatalog = {
     'Walls': { rate: 45, desc: 'Premium Low Sheen' },
     'Ceilings': { rate: 35, desc: 'Flat White' },
     'Trims': { rate: 25, desc: 'Semi-Gloss Enamel' },
-    'Cabinets': { rate: 120, desc: 'Satin Finish' },
-    'Feature Wall': { rate: 65, desc: 'Textured/Bold' }
+    'Cabinets': { rate: 120, desc: 'Satin Finish' }
   },
   Exterior: {
     'Facade': { rate: 55, desc: 'Weatherproof' },
     'Eaves': { rate: 30, desc: 'Exterior Protect' },
-    'Fascia': { rate: 35, desc: 'UV Gloss' },
-    'Deck': { rate: 45, desc: 'Staining' },
-    'Roof': { rate: 85, desc: 'Restoration' }
+    'Fascia': { rate: 35, desc: 'UV Gloss' }
   },
   Prep: {
     'Sanding': { rate: 15, desc: 'Industrial Grade' },
     'Plaster Repair': { rate: 65, desc: 'Crack Patching' },
-    'Timber Rot': { rate: 95, desc: 'Structural' },
-    'Pressure Wash': { rate: 10, desc: 'High Pressure' }
+    'Timber Rot': { rate: 95, desc: 'Structural' }
   }
 };
 
@@ -37,9 +33,8 @@ export const pricingData = {
   brands: {
     'Dulux Wash & Wear': 28.50,
     'Haymes Elite': 26.20,
-    'Berger Premium': 21.50, // Added Berger brand
-    'Wattyl ID': 22.10,
-    'Taubmans Endure': 24.80
+    'Berger Premium': 21.50,
+    'Wattyl ID': 22.10
   }
 };
 
