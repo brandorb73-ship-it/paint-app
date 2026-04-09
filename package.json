@@ -1,21 +1,17 @@
 {
-  "name": "paint-app",
+  "name": "rav-property-app",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+  "scripts": { "dev": "vite", "build": "vite build", "preview": "vite preview" },
+  "dependencies": {
+    "lucide-react": "^0.284.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.6.0",
+    "framer-motion": "^10.16.4"
   },
-"dependencies": {
-  "lucide-react": "^0.284.0",
-  "react": "^18.2.0",
-  "react-dom": "^18.2.0",
-  "jspdf": "^2.5.1",
-  "jspdf-autotable": "^3.6.0",
-  "framer-motion": "^10.16.4"
- },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.14",
