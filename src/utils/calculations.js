@@ -1,24 +1,30 @@
 export const pricingData = {
-  laborDay: 580, 
-  margin: 1.35,
   brands: {
-    'Dulux Premium': 28,
-    'Haymes Elite': 26,
-    'Wattyl ID': 22,
-    'Taubmans Endure': 24
+    'Dulux Premium': 28.50,
+    'Haymes Elite': 26.20,
+    'Wattyl ID': 22.10,
+    'Taubmans Endure': 24.80
   },
-  rates: {
-    interior: 45, exterior: 55, heritage: 85, cabinets: 120, 
-    touchups: 35, presale: 38, eaves: 25, deck: 40
-  }
+  baseRates: {
+    'Interior Walls': 45,
+    'Ceilings': 35,
+    'Heritage Restoration': 95,
+    'Pre-Sale Refresh': 38,
+    'Touch-ups': 65, // Higher hourly/sqm for small jobs
+    'Kitchen Cabinets': 120,
+    'Trims/Skirtings': 25,
+    'Eaves/Fascias': 32
+  },
+  laborMarkup: 1.35 // 35% margin to cover overheads & profit
 };
 
-export const calculateService = (type, qty, rate, brandPrice, coats) => {
-  const materialSub = (qty / 14) * coats * brandPrice;
-  const laborSub = qty * rate;
-  const total = (materialSub + laborSub) * pricingData.margin;
+export function calculateLineItem(qty, baseRate, brandPrice, coats) {
+  const materialCost = (qty / 14) * coats * brandPrice; // 14sqm per L coverage
+  const laborCost = qty * baseRate;
+  const subtotal = (materialCost + laborCost) * pricingData.laborMarkup;
+  
   return {
-    label: `Math: (${qty}sqm × $${rate}) + (${coats} coats material) + 35% Margin`,
-    amount: total
+    total: subtotal,
+    formula: `(${qty}sqm × $${baseRate} labor) + (${coats} coats material at $${brandPrice}/L) + 35% Margin`
   };
-};
+}
